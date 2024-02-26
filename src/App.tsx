@@ -3,6 +3,9 @@ import logo from "./assets/logo.png";
 import trophy from "./assets/1.png";
 import pic from "./assets/2.png";
 import machines from "./assets/3.png";
+import { IoIosCall } from "react-icons/io";
+import { FiFacebook } from "react-icons/fi";
+import { CiGlobe } from "react-icons/ci";
 function App() {
   return (
     <main className="bg-gradient-to-b from-slate-50 to-amber-200">
@@ -13,13 +16,13 @@ function App() {
         <div className="w-full h-36 sm:w-1/3 sm:h-full">
           <img src={trophy} className="w-full h-full object-contain" />
         </div>
-        <div className="w-full sm:w-2/3">
-          <h4 className="font-bold text-sm text-justify sm:text-xl">
+        <div className="w-full sm:w-2/3 mt-5">
+          <h4 className="font-bold text-sm text-justify sm:text-2xl">
             {" "}
             C.R.I. PUMPS WINS THE NATIONAL ENERGY CONSERVATION AWARD 2018 for
             the 4th time.
           </h4>
-          <ul className="list-disc text-xs p-3 text-justify">
+          <ul className="list-disc text-sm p-3 text-justify pl-7 sm:text-lg">
             <li>
               C.R.I.'s energy efficient products are well recognized by various
               Government Institutions, as trustworthy products for various
@@ -34,7 +37,7 @@ function App() {
             </li>
           </ul>
           <img src={pic} className="w-full object-contain" />
-          <p className="text-xs">
+          <p className="text-sm sm:text-lg">
             Government of India has awarded the "National Energy Conservation
             Award 2018". Mr. G. Selvaraj, Joint Managing Director of C.R.I.
             Group received the award from Smt. Sumitra Mahajan, Speaker of Lok
@@ -42,14 +45,14 @@ function App() {
           </p>
         </div>
       </section>
-      <section className="text-sm text-justify p-5">
+      <section className="text-sm text-justify p-5 sm:text-lg">
         INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY RESULTING
         IN A CUMULATIVE SAVING OF MORE THAN 9,000 MILLION UNITS OF POWER FOR THE
         NATION.{" "}
       </section>
-      <section className="p-3 border-b-2 border-red-400 text-center">
+      <section className="p-5 border-b-2 border-red-400 text-center">
         <img src={machines} className="w-full h-full object-contain" />
-        <p className="text-xs font-thin">
+        <p className="text-xs">
           Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables -
           Solar Systems - Motors{" "}
         </p>
@@ -76,12 +79,20 @@ function App() {
         </p>
       </section>
       <footer className="bg-red-500 text-white flex justify-center flex-col items-center sm:flex-row sm:justify-between p-7">
-        <div>Toll free 1800 200 1234</div>
         <div>
-          <a href="www.facebook.com/criumps">www.facebook.com/criumps</a>
+          <IoIosCall className="inline" /> Toll free 1800 200 1234
         </div>
         <div>
-          <a href="www.crigroups.com">www.crigroups.com</a>
+          <a href="www.facebook.com/criumps">
+            {" "}
+            <FiFacebook className="inline" /> www.facebook.com/criumps
+          </a>
+        </div>
+        <div>
+          <a href="www.crigroups.com">
+            <CiGlobe className="inline" />
+            www.crigroups.com
+          </a>
         </div>
       </footer>
     </main>
